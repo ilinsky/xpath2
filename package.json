@@ -1,0 +1,43 @@
+{
+  "name": "xpath2",
+  "version": "0.0.1-alpha-1",
+  "description": "DOM 3 XPath implementation (with XPath 2.0 language support)",
+  "main": "./lib",
+  "engines": {
+    "node": ">=0.6.0"
+  },
+  "scripts": {
+    "build": "npm run lint && npm run test && npm run build-dev && npm run build-prd",
+    "build-dev": "node ./node_modules/webpack/bin/webpack",
+    "build-prd": "node ./node_modules/webpack/bin/webpack --config ./webpack.config.prd.js",
+    "lint": "node ./node_modules/eslint/bin/eslint ./lib/**/*.js",
+    "test": "node ./node_modules/mocha/bin/mocha ./test/xpath2.js"
+  },
+  "dependencies": {
+    "xpath2.js": "1.0.0-alpha-6"
+  },
+  "devDependencies": {
+    "chai": "^4.3.3",
+    "eslint": "^6.8.0",
+    "mocha": "~2.1.0",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilinsky/xpath2.git"
+  },
+  "keywords": [
+    "xpath",
+    "xpath2",
+    "xpath 2",
+    "dom",
+    "xml"
+  ],
+  "author": "Sergey Ilinsky <sergey@ilinsky.com> (http://www.ilinsky.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ilinsky/xpath2/issues"
+  },
+  "homepage": "https://github.com/ilinsky/xpath2#readme"
+}
