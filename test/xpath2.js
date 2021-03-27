@@ -6,9 +6,6 @@ describe('xpath2', function() {
     it('should have function defined', function() {
       expect(xpath2.query).to.be.a('function');
     });
-    it('should throw not implemented', function() {
-      expect(function(){xpath2.query()}).to.throw(TypeError, "query() function is not supported yet.");
-    });
   });
 
   describe('.evaluate()', function() {
