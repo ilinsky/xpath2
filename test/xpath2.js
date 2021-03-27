@@ -8,6 +8,18 @@ describe('xpath2', function() {
     });
   });
 
+  describe('.createExpression()', function() {
+    it('should have function defined', function() {
+      expect(xpath2.createExpression).to.be.a('function');
+    });
+  });
+
+  describe('.createNSResolver()', function() {
+    it('should have function defined', function() {
+      expect(xpath2.createNSResolver).to.be.a('function');
+    });
+  });
+
   describe('.evaluate()', function() {
     it('should have function defined', function() {
       expect(xpath2.evaluate).to.be.a('function');
@@ -44,12 +56,6 @@ describe('xpath2', function() {
     });
     it('should throw not implemented', function() {
       expect(function(){xpath2.parse()}).to.throw(TypeError, "parse() function is not supported yet.");
-    });
-  });
-
-  describe('.XPathEvaluator', function() {
-    it('should have XPathEvaluator constructor function defined', function() {
-      expect(xpath2.XPathEvaluator).to.be.a('function');
     });
   });
 

@@ -1,6 +1,6 @@
 {
   "name": "xpath2",
-  "version": "0.0.1-alpha-1",
+  "version": "0.0.1-alpha-2",
   "description": "DOM 3 XPath implementation (with XPath 2.0 language support)",
   "main": "./lib",
   "engines": {
